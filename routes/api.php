@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuickVoteController as qvc;
+use App\Http\Controllers\PadronController as pc;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,5 @@ use App\Http\Controllers\QuickVoteController as qvc;
     return $request->user();
 });*/
 
-Route::get('quick-vote', [qvc::class, 'vote']);
+Route::get('quickvote', [qvc::class, 'vote']);
+Route::post('new/voter', [pc::class, 'pipol']);
