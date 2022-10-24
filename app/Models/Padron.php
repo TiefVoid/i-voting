@@ -25,7 +25,7 @@ class Padron extends Model
         'curp',
         'ocr',
         'anio_registro',
-        'emison',
+        'emision',
         'vigencia',
         'edad',
         'face',

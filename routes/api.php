@@ -22,3 +22,4 @@ use App\Http\Controllers\PadronController as pc;
 
 Route::get('quickvote', [qvc::class, 'vote']);
 Route::post('new/voter', [pc::class, 'pipol']);
+Route::post('login', [pc::class, 'login']);
