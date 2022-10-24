@@ -15,25 +15,7 @@ class QuickVote extends Model
 
     protected $primaryKey = 'id';
     
-    public $timestamps = true;
-
-    /**
-     * The attributes that should be mutated to dates.
-     *
-     * @var array
-     */
-    protected $dates = [
-        'created_at'
-    ];
-
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'created_at' => 'datetime:Y-m-d H:i:s'
-    ];
+    public $timestamps = false;
 
     public $fillable = [
         'localidad',
