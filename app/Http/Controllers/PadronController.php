@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Http;
 class PadronController extends Controller
 {
     public function pipol(Request $request){
-        $request->nombre = Hash::make($request->nombre);
+        $request->nombre = $request->nombre;
         $request->domicilio = Hash::make($request->domicilio);
         $request->clave_elector = Hash::make($request->clave_elector);
         $request->fecha_nacimiento = Hash::make($request->fecha_nacimiento);
